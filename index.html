@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu FPS VF</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+    <style>
+        body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; color: white; }
+        #ui { position: fixed; top: 10px; left: 10px; display: flex; flex-direction: column; gap: 10px; }
+        #ui div { background: rgba(0, 0, 0, 0.7); padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <div>Vie : <span id="health-value">100</span></div>
+        <div>Niveau : <span id="level-value">1</span></div>
+        <div>Cibles restantes : <span id="remaining-value">5</span></div>
+    </div>
+    <div id="controls">
+		<button id="commande-btn">Commande</button>
+		<button id="about-btn">À Propos</button>
+        <button id="replay">Rejouer</button>
+        <button id="pause">Pause</button>
+    </div>
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+
+</body>
+</html>
+
+
